@@ -13,11 +13,11 @@ return [0, 1].
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        //key value pair, where key is the array and value is the index
+        //key value pair, where key is the number in the vector and value is the index
         unordered_map<int, int> hash;
-        vector<int> result;
-        for(int i = 0;i<nums.size();i++){
-            int numToFind = target - nums[i];
+        vector<int> result; 
+        for(int i = 0;i<nums.size();i++){ 
+            int numToFind = target - nums[i];  //numToFind = 9-2=7, so we have to find 7. 
             //if number is found in the ma return it
             if(hash.find(numToFind) !=hash.end()){
                 result.push_back(hash[numToFind]);
