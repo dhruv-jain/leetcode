@@ -38,9 +38,9 @@ public:
             d->next = new ListNode(sum%10);
             d=d->next;
         }
-        if((sum / 10 )== 1) {
+        if((sum / 10 )== 1) { //if the sum is greater than 10, then divide that sum by 10. Create a new node if thats the case
             d->next = new ListNode(1);
         }
-        return s;
+        return s->next;
     }
 };
