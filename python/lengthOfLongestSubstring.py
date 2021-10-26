@@ -19,4 +19,3 @@ class Solution:
             
             map[s[i]] = i 
         return (max_length)
-        
